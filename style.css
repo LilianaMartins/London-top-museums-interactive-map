@@ -3,7 +3,17 @@
   font-family: 'Montserrat', sans-serif;
 
 }
+.title {
+  text-align: center;
+  font-weight: lighter;
+  background-color: #f3d3d3;
+  opacity: .5;
+  height: 80px;
+  padding: 0;
+  margin: 0;
 
+
+}
 .buttonClose {
   text-align: right;
 
@@ -11,7 +21,7 @@
 
 nav {
   width: 25%;
-  background: pink;
+  background: #f3d3d3;
   height: 100vh;
   margin-top: 0;
   padding: 20px;

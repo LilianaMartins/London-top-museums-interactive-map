@@ -30,16 +30,24 @@
 
 <body>
   <div class="container">
+    <div class="title">
+      <h3>Best London Museums*</h3>
+      <p>According to me</p>
+    </div>
+
     <button type="button" class=" " onclick="nav_Open()" id="navToggleOpen" name="button"><i class="fas fa-bars fa-3x"></i></button>
     <nav class="hidden" id="nav">
       <div class="buttonClose">
         <button type="button" onclick="nav_Close()" id="navToggleClose" name="button"><i class="far fa-window-close fa-3x"></i></button>
+      </div>
+      <div class="geocoder" id="geocoder">
 
       </div>
-      <div class="searchBox">
+
+      <!-- <div class="searchBox">
         <input id="searchBox" type="text" placeholder="Search for museums" name="" value="">
 
-      </div>
+      </div> -->
     </nav>
 
   </div>
@@ -84,7 +92,10 @@
     });
 
     // Add the geocoder to the map
-    map.addControl(geocoder);
+
+    document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+
+    // map.addControl(geocoder);
 
     // After the map style has loaded on the page,
     // add a source layer and default styling for a single point
