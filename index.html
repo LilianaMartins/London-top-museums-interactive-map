@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Display a map with a custom style</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/687c659c83.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <button type="button" class=" " onclick="nav_Open()" id="navToggleOpen" name="button"><i class="fas fa-bars fa-3x"></i></button>
+    <nav class="hidden" id="nav">
+      <div class="buttonClose">
+        <button type="button" onclick="nav_Close()" id="navToggleClose" name="button"><i class="far fa-window-close fa-3x"></i></button>
+
+      </div>
+      <div class="searchBox">
+        <input id="searchBox" type="text" placeholder="Search for museums" name="" value="">
+
+      </div>
+    </nav>
+
+  </div>
+
+
+
+  <!--this is the code for the map -->
+  <container id='map'>
+
+
+
+
+  </container>
+
+
+
+
+
+  <script type="text/javascript">
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGlsaWFuYW1hcnRpbnMiLCJhIjoiY2p6YTNuN3h5MDFpZjNkcGhmYzF6cWIwdiJ9.qQmKi8iz_E4EBfLmUQdDkQ';
+    var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/lilianamartins/cjza3uzf705o41clzc697fi9n', //hosted style id
+      center: [-0.120485, 51.495089], // starting position
+      zoom: 12 // starting zoom
+    });
+    /*natural hist museum
+        var marker = new mapboxgl.Marker()
+          .setLngLat([51.496349, -0.176459])
+          .addTo(map);
+
+        var marker = new mapboxgl.Marker()
+          .setLngLat([-21.9270884, 64.1436456])
+          .addTo(map);
+
+        var marker = new mapboxgl.Marker()
+          .setLngLat([-21.9270884, 64.1436456])
+          .addTo(map);
+
+        var marker = new mapboxgl.Marker()
+          .setLngLat([-21.9270884, 64.1436456])
+          .addTo(map);
+
+        var marker = new mapboxgl.Marker()
+          .setLngLat([-21.9270884, 64.1436456])
+          .addTo(map); */
+  </script>
+
+</body>
+
+</html>
