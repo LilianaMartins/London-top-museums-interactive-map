@@ -7,10 +7,10 @@
   text-align: center;
   font-weight: lighter;
   background-color: #f3d3d3;
-  opacity: .5;
+  opacity: .7;
   height: 80px;
-  padding: 0;
-  margin: 0;
+  float: right;
+  width: 30%
 
 
 }
@@ -28,6 +28,7 @@ nav {
   position: absolute;
   top: 0px;
   left: 0px;
+  opacity: .7;
 }
 
 .hidden {
@@ -61,6 +62,7 @@ nav {
 }
 .searchBox {
   margin-top: 20px;
+
 }
 
 #searchBox {
